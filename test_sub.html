@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이지스퍼블리싱</title>
+    <link rel="stylesheet" href="css/test_all.css">
+    <link rel="stylesheet" href="css/test_sub.css">
+    <script src="js/test_all.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="header_top" class="container">
+            <ul>
+                <li><a href=""><div class="pub"></div></a> </li>
+                <li><a href=""><div class="edu"></div></a></li>
+            </ul>
+            <div class="form">
+                <ul>
+                    <li><a href="">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+               
+                <input type="text" placeholder="도서명, 저자 등 검색">
+            </div>
+        </div>
+        <div id="header_bottom" class="container">
+            <a href="http://imcorn.dothome.co.kr/test/test_main.html"><img src="images/logo_pub.png" alt=""></a>
+            <a href="#"><img src="images/ico_menu.png"  class="btn_hidden" alt=""  ></a>
+            <nav class="nav_hidden">
+                <ul>
+                    <li class="drop"><a href="#">회사소개</a>
+                        <ul class="hidden" id="hidden_1">
+                            <li><a href="#">이지스퍼블리싱(주)소개</a></li>
+                            <li><a href="#">AboutEasyspublishing</a></li>
+                            <li><a href="#">이지스퍼블리싱 소개</a></li>
+                            <li><a href="#">도서 목록 다운로드</a></li>
+                            <li><a href="#">뉴스와 홍보 자료</a></li>
+                            <li><a href="#">공지사항/이벤트</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop"><a href="#">도서</a>
+                        <ul class="hidden" id="hidden_2">
+                            <li><a href="#">전체보기</a></li>
+                            <li><a href="#">분야별 보기</a></li>
+                            <li><a href="#">시리즈 보기</a></li>
+                            <li><a href="#">전자책 보기</a></li>
+                            <li><a href="#">이지스 에듀 도서 보기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">자료실</a></li>
+                    <li><a href="#">질문답변</a></li>
+                    <li><a href="#">동영상 강의</a></li>
+                    <li><a href="http://imcorn.dothome.co.kr/test/test_sub.html">교,강사 전용</a></li>
+                </ul>
+
+            </nav>
+        </div>               
+        <div id="home_menu" class="container">
+            <ul>
+                <li><a href="http://imcorn.dothome.co.kr/test/test_main.html"> <img src="images/ico_home.png" alt=""> </a></li>
+                <li class="locate"><a href="http://imcorn.dothome.co.kr/test/test_sub.html">교재 샘플/강의자료 요청</a></li>
+            </ul>
+        </div>        
+    </header>
+    <section class="text_container">
+        <h2>교재 샘플/강의자료 요청</h2>
+        <div class="text">
+            <ul>
+                <li>- 대학 또는 학원, 문화센터 선생님 중 이지스퍼블리싱 도서를 교재로 채택하고 싶으신 분들은 아래 내용을 접수해 주시기 바랍니다.</li>
+                <li>- 그 외에 단체 구매에 대한 요청 및 문의는 이주동 실장(<a href="">nlrose@easyspub.co.kr</a>)에게 해주십시오.</li>
+                <li>- 반드시 로그인 후 신청 바랍니다.</li>
+            </ul>
+        </div>
+      
+        <div class="table">
+            <form action="">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">요청 도서*</th>
+                            <td>
+                                <div class="btn">
+                                    <input type="search">
+                                    <a href="#" class="btn BtnSearch"><img src="images/ico_search_pop.png" alt="검색"></a>
+
+                                </div>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">기관이름*</th>
+                            <td><input type="text" value="" required></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">학과/과정*</th>
+                            <td><input type="text" value="" required></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">용도/강의명</th>
+                            <td><input type="text" value=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">성함*</th>
+                            <td><input type="text" value="" required></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">연락처*</th>
+                            <td><input type="tel" value="" required></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이메일*</th>
+                            <td><input type="email" value="" required></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주소*</th>
+                            <td><input type="text" value="" style="width:90%;" required></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">추가 요청 및 <br>건의사항</th>
+                            <td><input type="text" style="width:90%;" ></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" required>신청유형*</th>
+                            <td class="checkbox">
+                                <input type="checkbox" value="Y"> <label style="padding-right:20px;"> 종이책</label>
+                                <input type="checkbox" value="Y"> <label style="padding-right:20px;"> 전자책</label>
+                                <input type="checkbox" value="Y"> <label style="padding-right:20px;"> 강의자료</label>
+                            </td>
+                        </tr>
+
+           
+                    </tbody>
+                </table>
+                
+            </form>
+        </div>
+
+        <div class="btn_go">
+            <a href="#" class="black">신청하기</a>
+            <a href="/Main/PUB" class="gray">취소</a>
+        </div>
+    </section>
+    <footer>
+        <div id="footer_top" class="container">
+           
+            <div class="span_t">
+                <ul>
+                    <li><a href="#">찾아오시는 길</a>|</li>
+                    <li><a href="#">개인정보취급방침</a>|</li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+            </div>
+            <div class="span_b">
+                <a href="#">저자신청</a>
+                <a href="#">역자신청</a>
+                <a href="#">교재샘플/강의자료 요청</a>
+            </div>
+        </div>
+        <div id="fotter_bot" class="container">
+            <img src="images/logo_footer.png" alt="">
+            
+            <address>
+                <p>서울특별시 마포구 잔다리로 109(우편번호 04003) TEL (02)325-1722 FAX (02)326-1723</p>
+                <p>사업자등록번호 105-87-44487 대표자 : 이지연 / Email : easy@easyspub.co.kr</p>
+                <p>Copyright(c)2015 이지스퍼블리싱㈜ EasysPublishing Co., Ltd. All Rights Reserved</p>
+            
+            </address>
+        </div>
+        <div class="footer_hidden">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">이지스에듀</a></li>
+            </ul>
+            
+
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+#header_top{
+    width: 100%;
+    height: 50px;
+    background: black;
+    justify-content: space-around;
+    
+}
+
+#header_top ul li{
+    float: left;
+    
+}
+#header_top .pub{
+    width: 150px;
+    height: 50px;
+    background: url(../images/logo_pub.png) no-repeat center;
+    background-size: 80% ; 
+    background-color: #b40a13;
+    margin: 0 auto;
+}
+#header_top .edu{
+    width: 100px;
+    height: 50px;
+    background: url(../images/logo_edu.png) no-repeat center;
+    background-size: 80%; 
+}
+#header_top .form{
+    display: flex;
+    color: white;
+    
+    float: right;
+    vertical-align: middle;
+    font-size: 0.8em;
+}
+#header_top .form ul li a {
+    color: white;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 1000px){
+    #header_bottom nav{
+        
+        padding-left: 0;
+    }
+    #header_bottom img{
+
+        align-content: flex-end;
+    }
+}
+@media screen and (max-width: 736px) {
+    #header_top{
+        display: none;
+    }
+    #header_bottom{
+        width: 100%;
+       
+        flex-wrap: wrap;
+        display: flex;
+    }
+    #header_bottom img{
+        align-content: center;
+        
+    }
+    #header_bottom{
+        flex-direction: column;
+        display: block;
+    }
+    #header_bottom nav{
+        
+        height: 100%;
+    }
+    #header_bottom nav ul{
+        width: 200px;
+        
+       
+        z-index: 800;
+
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #b40a13;
+        padding: 0; 
+        
+    }
+    #header_bottom nav ul li{
+       
+        width: 100%;
+    }
+    #header_bottom nav ul li a{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        padding: 10px 0; 
+        width: 100%;
+        left: 0;
+    }
+    #header_bottom .btn_hidden{
+        display: block;
+       
+     
+        
+    }
+    .nav_hidden{
+        display: none;
+    }
+
+    .nav_hidden.active{
+        display: flex;
+    }
+
+    
+    #header_bottom #hidden_1{
+        height: 258px;
+        left: 200px;
+        top: 0;
+  
+    }
+    #header_bottom #hidden_2{
+        height: 185px;
+        top: 60px;
+        left: 200px;
+        
+    }
+}
+
+
+
+#header_bottom{
+    width: 100%;
+    height: 30px;
+    padding: 20px 0px;
+    margin: 0 auto;   
+    background: #b40a13;
+    flex-wrap: nowrap;
+    display: flex;
+
+}
+#header_bottom img{
+    float: left;
+    height: 29px;
+    align-content: flex-start;
+}
+#header_bottom .btn_hidden{
+    display: hidden;
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    font-size: 20px;
+  
+}
+#header_bottom nav{
+   
+    justify-content: right;
+    padding-left: 10%;
+}
+#header_bottom nav ul {
+    
+    
+    white-space:nowrap;
+    font-size: 100%;
+}
+#header_bottom nav ul li{
+    display: inline;
+    
+}
+
+#header_bottom nav ul li:hover .hidden{
+    display: block;
+    
+}
+
+#header_bottom nav ul li a{
+    
+    text-align: right; 
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    
+    margin: 10px;
+    
+   
+}
+
+#header_bottom .hidden{
+    display: none;
+    position: absolute;
+   
+    border: 1px solid #b40a13;
+    background-color: rgb(255, 255, 255);
+   
+    z-index: 999;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+   
+   
+}
+#header_bottom .hidden li{
+    display: block;
+}
+
+#header_bottom .hidden a{ 
+    color: black;
+    display: block;
+    padding: 10px 10px;
+    margin: 0;
+    text-align: left;
+    box-sizing: border-box;
+}
+#header_bottom .hidden li :hover{
+    background-color: #b40a13;
+  
+ 
+    
+}
+
+
+#footer_top{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    padding: 20px 0;
+    background: lightgray;
+    border-top: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
+  
+    font-size: 0.8em;
+}
+
+#footer_top ul li{
+    display: inline;
+
+}
+#footer_top ul li a{
+    color: black;
+    padding: 0px 15px;
+
+}
+
+#footer_top .span_b a{
+    width: 100px;
+    height: 10px;
+    background: rgb(88, 88, 88);
+    color: #ffffff;
+    padding: 5px 15px;
+    margin: 0 5px;
+}
+
+#footer_bot {
+    position: relative;
+    width: 100%;
+    height: 124px;
+}
+footer img{
+    position: absolute;
+    top: 50px;
+   
+    right: 70%;
+    display: block;
+}
+address{
+    margin: 28px 0 30px 290px;
+    float: left;
+}
+.footer_hidden ul li{
+    display: none;
+}
+@media screen and (max-width: 736px){
+    #footer_top{
+        height: 60px;
+        display: block;
+        text-align: center;
+    }
+    #footer_top .span_t{
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
+    #footer_top .span_b{
+        margin-top: 10px;
+        padding: 5px 0;
+    }
+    #footer_top .span_b a{
+        width: 100px;
+        height: 10px;
+        background: #ffffff;
+        color: rgb(88, 88, 88);
+        border: 1px solid rgb(88, 88, 88);
+        padding: 5px 15px;
+        margin: 0 5px;
+    }
+    footer img{
+        display: none;
+    }
+    address{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 20px;
+        background-color: #363636;
+        color: #a7a7a7;
+        font-size: 0.8em;
+    }
+    .footer_hidden{
+        width: 100%;
+        padding: 10px;
+        background-color: #363636;
+        text-align: center;
+       
+    }
+    .footer_hidden ul li{
+        display: inline-block;
+        
+        height: 30px;
+        line-height: 30px;
+        margin: 0 3px 8px;
+        padding: 0 13px;
+        
+        border: 1px solid #535353;
+        background-color: #464646;
+        
+    }
+    .footer_hidden ul li a{
+        font-size: 15px;
+        color: #fff;
+    }
+}

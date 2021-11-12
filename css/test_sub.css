@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.text_container
+{
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+    margin-right: 10%;
+    margin-left: 5%;
+    padding: 30px 0 100px;
+    
+}
+#home_menu{
+    height: 39px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #f3f3f3;
+    
+    justify-content: flex-start;
+}
+#home_menu ul li {
+    display: block;
+    float: left;
+    line-height: 39px;
+    font-size: 14px;
+    color: #555555;
+    border-right: 1px solid #ddd;
+}
+#home_menu ul li a{
+    padding: 0 18px;
+    color: #555555;
+}
+
+.text_container h2{
+    
+    padding-bottom: 25px;
+    font-size: 33px;
+    color: #000;
+    font-weight: 700;
+     
+    margin: 0 auto;
+}
+.text_container .text{
+    border-top: 1px solid #7b7b7b; 
+    padding-bottom: 30px;
+    width: 90%;
+    font-size: 0.8em;
+    color: #555555;
+    padding-top: 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+}
+.table form table tbody tr{
+    border: 1px solid #8b8b8b;
+    height: 70px;
+}
+.table form table tbody th{
+    padding: 25px 0 25px 25px;
+    text-align: left;
+    vertical-align:middle;
+
+}
+.table form table tbody td{
+    padding: 25px 0 25px 36px;
+    text-align: left;
+    vertical-align:middle;
+    font-size: 1em ;
+   
+}
+.table form table tbody td input{
+    height: 30px;
+}
+.table .checkbox{
+    display: flex;
+
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+
+.btn_go{
+    
+    height: 69px;
+    line-height: 69px;
+ 
+    font-size: 25px;
+    font-weight: 700;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+}
+.btn_go .black{    
+    padding: 5px 20px;
+    
+    background: black;
+    color: white;
+}
+.btn_go .gray{
+    padding: 5px 20px;
+   
+    background: gray;
+    color: white;
+}
+.table .btn{
+   
+    display: flex;
+  
+    flex-direction: row;
+    align-items: center;
+    
+ 
+    width: 90%;
+    
+    padding: 0; margin: 0;
+}
+
+.table .btn a img{
+   
+    width: 28px;
+    height: 28px;
+    
+    border: 1px solid #535353;
+}
+
+
+@media screen and (max-width: 736px) {
+    #home_menu ul li {
+        
+        border-right: none;
+    }
+    #home_menu ul li a{
+        padding: 0 8px;
+        
+    }
+    .table td input{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .text_container{
+        width: 100%;
+    }
+   
+}
